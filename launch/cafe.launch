@@ -1,0 +1,11 @@
+
+<launch>
+
+  <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find htm_follower)/media/models"/>
+  <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find htm_follower)/media/models"/>
+  
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find htm_follower)/worlds/cafe3.world"/>
+  </include>
+
+</launch>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>htm_follower</name>
+  <version>0.0.0</version>
+  <description>The htm_follower package</description>
+
+  <maintainer email="brad@todo.todo">brad</maintainer>
+
+  <license>TODO</license>
+
+  <author>brad</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>lightsfm</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>gazebo_ros</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>lightsfm</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+
+
+  <export>
+    <gazebo_ros plugin_path="${prefix}/../../lib" gazebo_media_path="${prefix}" />
+  </export>
+</package>
